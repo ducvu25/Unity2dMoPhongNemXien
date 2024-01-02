@@ -59,7 +59,7 @@ public class BulletController : MonoBehaviour
             }
             _time = time_spawn;
         }
-        if(Mathf.Abs(vo * Mathf.Sin(anpha) - Setting.g * t) <= 0.05f && !showH)
+        if(vo * Mathf.Sin(anpha) - Setting.g * t <= 0.05f && !showH)
         {
             showH = true;
             points.Add(Instantiate(prePointSpawn, transform.position, Quaternion.identity));
