@@ -90,6 +90,7 @@ public class GameController : MonoBehaviour
         bulletController.x0 = pSpawnBullet.position.x;
         bulletController.check = true;
         bulletController.controller = this;
+        AudioController.instance.PlaySound(0);
         bulletController.tunnel = goTunnel.transform.GetComponent<Tunnel>();
         txtH.text = "Tầm cao tối đa: ... m" ;
         txtL.text = "Tầm dài tối đa: ... m" ; 

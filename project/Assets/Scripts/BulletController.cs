@@ -82,6 +82,7 @@ public class BulletController : MonoBehaviour
             controller.UpdateTxt(s, 1);
             points[points.Count - 1].transform.SetParent(goParent.transform);
             tunnel.Show(transform.localPosition);
+            AudioController.instance.PlaySound(1);
         }
 
         //Debug.Log((vo * Mathf.Cos(anpha) * t).ToString() + " " + (Mathf.Cos(anpha)).ToString() + " " + (anpha).ToString());
